@@ -47,7 +47,8 @@ public class Task1 {
         System.out.println("_____888888___________888888____________");
         System.out.println("_______________________8888_____________");
 
-        System.out.println("____888888____________________________\n" +
+        System.out.println(
+                "____888888____________________________\n" +
                 "____88888888___________________________\n" +
                 "___8888888888__________________________\n" +
                 "__888888888888_________________________\n" +
@@ -80,25 +81,16 @@ public class Task1 {
                 "_______________________8888_____________\n");
 
 
-        System.out.println("Задача 1");
-        System.out.println(" ");
-
-        int a;
-        int b;
-
-        a = 10;
-        b = 3;
-
-        float e = a; //иначе при делении будет видна только целая часть поэтом костылем делаем наши переменный float
-        float f = b;
-        float c = e / f;
+        
+        int a = 12;
+        int b = 5;
 
         //Проверка четности переменной а
         if (a % 2 ==0) {
             System.out.println("Переменная а четная");
         }
         else if (a % 2 > 0) {
-            System.out.println("Переменная а Не четная");
+            System.out.println("Переменная а нечетная");
         }
 
         //Проверка четности переменной b
@@ -106,14 +98,14 @@ public class Task1 {
             System.out.println("Переменная b четная");
         }
         else if (b % 2 > 0) {
-            System.out.println("Переменная b Не четная");
+            System.out.println("Переменная b нечетная");
         }
 
         //Печатаем результаты
-        System.out.println("сложение результат: " + a + "+" +  b + "=" + (a + b));
-        System.out.println("умножение результат: " + a + "*" +  b + "=" + (a * b));
-        System.out.println("вычитание результат: "+ a + "-" +  b + "=" + (a - b));
-        System.out.println("деление результат: " + a + "/" +  b + "=" + c);
+        System.out.println(a + b);
+        System.out.println(a * b);
+        System.out.println(a - b);
+        System.out.println((0.0 + a) / b);
         System.out.println("остаток от деления результат: " + a + "%" +  b + "=" + (a % b));
         System.out.println("________________________________________________________________________________________");
         System.out.println(" ");
