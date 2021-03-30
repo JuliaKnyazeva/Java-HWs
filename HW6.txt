@@ -1,1 +1,75 @@
+public class Task6 {
+    public static void main(String[] args) {
 
+        System.out.println("Задача №1");
+//
+//        Дана строка:
+//        String s = “Перестановочный алгоритм быстрого действия”;
+//        необходимо вывести все буквы “о” из этой строки.
+//                Для указанной строки ответ будет “ооооо” (или в столбик)
+
+        String s = "Перестановочный алгоритм быстрого действия";
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'о') {
+                System.out.print(s.charAt(i));
+            }
+        }
+
+        System.out.println();
+        System.out.println("_______________________________________________________");
+        System.out.println("Задача №2");
+//
+//        Дана строка:
+//        String s = “Перевыборы выбранного президента”;
+//        необходимо подсчитать количество букв “е” в строке.
+//        Для указанной строки ответ будет 4.
+        String s2 = "Перевыборы выбранного президента";
+        int count = 0;
+        for (int i = 0; i < s2.length(); i++){
+            if (s2.charAt(i) == 'е') {
+                count ++;
+            }
+        }
+        System.out.println(count);
+
+        System.out.println();
+        System.out.println("_______________________________________________________");
+        System.out.println("Задача №3");
+
+//        Дана строка:
+//        String s = “Посмотрите как Рите нравится ритм”;
+//        необходимо вывести индексы начала всех подстрок - “рит”, независимо от регистра.
+//                Для указанной строки ответ будет 6, 15, 29.
+//        String s3 = "Посмотрите как Рите нравится ритм";
+//        int allRit = 0;
+//
+//        for (int i = 0; i < s3.length(); i++) {
+//            if (s3.indexOf(i) = "рит") {
+//                allRit ++;
+//            }
+//        }
+//        System.out.println(allRit);
+
+        String s3 = "Посмотрите как Рите нравится ритм";
+        String lowRit = s3.toLowerCase();
+        String rit = "рит";
+
+        System.out.println(lowRit);
+
+        int allRit = lowRit.indexOf(rit);
+        while(allRit != -1) {
+            System.out.println(allRit + " ");
+            allRit = lowRit.indexOf(rit, allRit + 1);
+        }
+
+        System.out.println();
+        System.out.println("_______________________________________________________");
+        System.out.println("Экстра задача");
+
+//        Дан массив:
+//        String[][] array = {{“Привет”, “всем”, “кто”}, {“изучает”, “язык”, “программирования”}, {“java”}};
+//        необходимо подсчитать количество строк в массиве, которые не содержат буквы “е”.
+
+//        String[][] array = {{"Привет", "всем", "кто"}, {"изучает", "язык", "программирования"}, {"java"}};
+//        int allLane = 0;
